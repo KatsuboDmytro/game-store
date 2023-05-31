@@ -3,6 +3,7 @@ import { GameBuy } from '../GameBuy/GameBuy';
 import './gameItem.scss'
 
 interface Game {
+  id: number;
   title: string;
   price: number;
   image: string;

@@ -2,15 +2,29 @@
     display: flex;
     align-items: center;
     position: relative;
+    &__icon{
+        cursor: pointer;
+        position: relative;
+    }
+    &__price{
+        margin-left: 15px;
+        font-size: 18px;
+        font-weight: bold;
+    }
 }
 
-.cart__icon{
-    cursor: pointer;
-    position: relative;
-}
-
-.cart__price{
-    margin-left: 15px;
-    font-size: 18px;
-    font-weight: bold;
+.items-in-cart {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: tomato;
+    border-radius: 15px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    z-index: 2;
+    left: 15px;
+    top: -10px;
 }
