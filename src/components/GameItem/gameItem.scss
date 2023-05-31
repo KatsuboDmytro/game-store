@@ -9,14 +9,12 @@
     position: relative;
     &:not(:last-child) {
         margin-bottom: 30px;
-        margin-right: 50px;
     }
     &__title {
         font-size: 18px;
         font-weight: bold;
     }
     &__genre {
-        margin-top: 10px;
         display: flex;
         flex-wrap: wrap;
     }
@@ -29,8 +27,8 @@
     }
     &__buy {
         position: absolute;
-        right: 10px;
-        bottom: 10px;
+        bottom: 5px;
+        right: 5px;
     }
 }
 
@@ -70,11 +68,12 @@
 
 .game-genre {
     background-color: rgb(80, 82, 84);
-    padding: 2px 5px;
-    font-size: 13px;
+    padding: 4px 8px;
+    margin-top: 5px;
+    font-size: x-small;
     border-radius: 10px;
 }
 
 .game-genre:not(:last-child) {
-    margin-right: 7px;
+    margin-right: 5px;
 }
