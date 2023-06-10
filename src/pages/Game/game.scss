@@ -1,5 +1,17 @@
-.home-page {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+.game-page{
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__left {
+        width: 70%;
+    }
+    &__right {
+        width: 30%;
+    }
+    &__buy-game {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 20px;
+    }
 }

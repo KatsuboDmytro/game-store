@@ -1,4 +1,4 @@
-import React, { MouseEvent, ReactNode } from 'react';
+import { MouseEvent, ReactNode } from 'react';
 
 export interface ButtonProps {
   onClick: (event: MouseEvent<HTMLButtonElement>) => void;
@@ -9,6 +9,7 @@ export interface ButtonProps {
 }
 
 export interface CartItemProps {
+  id: number;
   title: string;
   price: number;
 }

@@ -10,6 +10,7 @@ export const CartMenu: React.FC<{ items: any, onClick: any }> = ({items, onClick
         {items.length > 0 ? items.map((game: any) => (
           <CartItem
             key={game.image}
+            id={game.id}
             price={game.price}
             title={game.title}
           />
