@@ -3,7 +3,7 @@ import { Provider } from 'react-redux';
 import { store } from './redux';
 
 import { Header } from './components';
-import { Home, Game } from './pages';
+import { Home, Game, Order } from './pages';
 import './index.scss';
 
 function App() {
@@ -15,6 +15,7 @@ function App() {
             <Routes>
               <Route path={'/'} element={<Home />} />
               <Route path={'/:title'} element={<Game />} />
+              <Route path={'/order'} element={<Order />} />
             </Routes>
         </div>
       </Router>

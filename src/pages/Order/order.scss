@@ -1,0 +1,8 @@
+.order-page {
+    display: flex;
+    flex-direction: column;
+    &__right {
+        font-size: 18px;
+        font-weight: bold;
+    }
+}
