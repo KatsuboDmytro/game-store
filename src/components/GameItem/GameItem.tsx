@@ -1,18 +1,23 @@
 import React from 'react';
-import { GameBuy } from '../GameBuy/GameBuy';
+import { useDispatch } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
+
+import { setCurrentGame } from '../../redux/games/reducer';
+import { Game } from '../../constants/interfaces'
+import { GameBuy } from '../index';
 import './gameItem.scss'
 
-interface Game {
-  id: number;
-  title: string;
-  price: number;
-  image: string;
-  genres: string[];
-}
-
 export const GameItem: React.FC<{ game: Game }> = ({ game }) => {
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    dispatch(setCurrentGame(game));
+    navigate(`/${game.title}`);
+  };
+
   return (
-    <div className="game-item">
+    <div className="game-item" onClick={handleClick}>
       <img className="game-cover" src={game.image} alt={game.title} />
       <div className="game-item__details">
         <span className="game-item__title">{game.title}</span>

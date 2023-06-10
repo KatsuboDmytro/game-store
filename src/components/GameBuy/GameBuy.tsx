@@ -1,12 +1,9 @@
 import React from 'react'
 import { deleteItemFromCart, setItemInCart } from '../../redux/cart/reducer';
 import { useDispatch, useSelector } from 'react-redux';
-import { Button } from '../Button/Button';
 
-interface game {
-    price: number;
-    id: number;
-}
+import { game } from '../../constants/interfaces'
+import { Button } from '../index';
 
 export const GameBuy: React.FC<{ game: game }> = ({ game }) => {
   const dispatch = useDispatch();

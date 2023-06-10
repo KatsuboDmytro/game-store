@@ -1,11 +1,9 @@
 import React from 'react';
 import { AiOutlineCloseCircle } from 'react-icons/ai';
+
+import { CartItemProps } from '../../constants/interfaces'
 import './cartItem.scss';
 
-interface CartItemProps {
-  title: string;
-  price: number;
-}
 
 export const CartItem: React.FC<CartItemProps> = ({ title, price }) => {
   return (

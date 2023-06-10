@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { CartBlock } from '../CartBlock/CartBlock'
+import { CartBlock } from '../index'
 import './header.scss'
 
 export const Header = () => {

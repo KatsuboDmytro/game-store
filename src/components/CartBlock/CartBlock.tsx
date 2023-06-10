@@ -1,8 +1,9 @@
 import { useState } from 'react';
 import { useSelector } from 'react-redux';
 import { BiCartAlt } from 'react-icons/bi';
+
 import { calcTotalPrice } from '../../constants/utils';
-import { CartMenu } from '../CartMenu/CartMenu'
+import { CartMenu } from '../index'
 import './cartBlock.scss';
 
 export const CartBlock = () => {

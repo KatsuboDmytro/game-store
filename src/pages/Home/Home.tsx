@@ -1,6 +1,6 @@
 import React from 'react'
 import { GAMES } from '../../constants/games'
-import { GameItem } from '../../components/GameItem/GameItem'
+import { GameItem } from '../../components'
 import './home.scss'
 
 export const Home = () => {

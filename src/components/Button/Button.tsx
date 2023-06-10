@@ -1,13 +1,7 @@
-import React, { MouseEvent, ReactNode } from 'react';
+import React from 'react';
 import classNames from 'classnames';
 
-interface ButtonProps {
-  onClick: (event: MouseEvent<HTMLButtonElement>) => void;
-  type: 'primary' | 'secondary';
-  children: ReactNode;
-  size?: 's' | 'm';
-  btnColor: string;
-}
+import { ButtonProps } from '../../constants/interfaces'
 
 export const Button: React.FC<ButtonProps> = ({
   onClick,
